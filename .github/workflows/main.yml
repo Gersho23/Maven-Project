@@ -33,5 +33,14 @@ jobs:
         run: |
           cd target
           ls -a
+      
+      - name: Step six - Build & push Docker image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: gersho23/my-projects
+          tags: myname
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           
      
