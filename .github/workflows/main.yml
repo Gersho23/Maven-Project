@@ -5,7 +5,7 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ newFeature ]
   
 jobs:
   build:
@@ -26,11 +26,3 @@ jobs:
 
       - name: Step four
         run: ls -a
-        
-      - name: Step five
-        run: |
-          cd target
-          ls -a
-      
-         
-     
