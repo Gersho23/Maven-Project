@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: move to the right path
+        run: |
+          cd target
+          ls -a
+    
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
