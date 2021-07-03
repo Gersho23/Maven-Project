@@ -3,9 +3,7 @@
 
 name: Java CI with Maven
 
-on:
-  push:
-    branches: [ master ]
+on: [push]
   
 jobs:
   build:
@@ -23,14 +21,5 @@ jobs:
 
       - name: Step three - Build with Maven
         run: mvn -B package --file pom.xml
-
-      - name: Step four
-        run: ls -a
-        
-      - name: Step five
-        run: |
-          cd target
-          ls -a
-      
-         
      
+         
