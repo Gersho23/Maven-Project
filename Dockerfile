@@ -1,5 +1,4 @@
-FROM openjdk:8-jdk-alpine
-FROM winamd64/openjdk
+FROM openjdk:8-jdk
 
 # Create a directory in the container
 WORKDIR /usr/MyApp
