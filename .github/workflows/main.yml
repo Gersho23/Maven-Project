@@ -29,11 +29,7 @@ jobs:
       - name: Step four
         run: dir
         
-      - name: Step five
-        run: |
-          cd target
-          dir
-      
+         
       - name: Step six - Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
